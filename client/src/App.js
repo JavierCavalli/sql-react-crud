@@ -74,45 +74,45 @@ function App() {
   return (
     <div className="App">
       <div className="information">
-        <label>Name:</label>
+        <label>Nombre:</label>
         <input
           type="text"
           onChange={(event) => {
             setName(event.target.value);
           }}
         />
-        <label>Age:</label>
+        <label>Edad:</label>
         <input
           type="number"
           onChange={(event) => {
             setAge(event.target.value);
           }}
         />
-        <label>Country:</label>
+        <label>País:</label>
         <input
           type="text"
           onChange={(event) => {
             setCountry(event.target.value);
           }}
         />
-        <label>Position:</label>
+        <label>Trabajo:</label>
         <input
           type="text"
           onChange={(event) => {
             setPosition(event.target.value);
           }}
         />
-        <label>Wage (year):</label>
+        <label>Salario (anual):</label>
         <input
           type="number"
           onChange={(event) => {
             setWage(event.target.value);
           }}
         />
-        <button onClick={addEmployee}>Add Employee</button>
+        <button onClick={addEmployee}>Agregar Empleado</button>
       </div>
       <div className="employees">
-        <button onClick={getEmployees}>Show Employees</button>
+        <button onClick={getEmployees}>Mostrar Empleados</button>
 
         {employeeList.map((val, key) => {
           return (
